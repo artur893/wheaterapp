@@ -10,10 +10,16 @@
 .container {
     background-color: var(--col2);
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -33,13 +39,44 @@ h1 {
 }
 
 form {
-    margin: 20px;
+    width: 300px;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+form>.btn {
+    width: 60px;
+}
+
+form>input {
+    width: 210px;
 }
 
 .weatherCard {
+    margin: 20px;
+    border-radius: 10px;
     width: 300px;
     height: 300px;
     color: var(--col4);
     background-color: var(--col3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weatherCard>.city {
+    font-size: 40px;
     margin: 20px;
+}
+
+.weatherCard>.temp {
+    margin: 20px;
+    font-size: 60px;
+}
+
+.weatherCard>.description {
+    margin: 20px;
+    font-size: 32px;
 }
