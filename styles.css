@@ -1,0 +1,45 @@
+:root {
+    font-size: 20px;
+    font-family: serif;
+    --col1: rgb(196, 221, 255);
+    --col2: rgb(127, 181, 255);
+    --col3: rgb(0, 29, 110);
+    --col4: rgb(254, 226, 197);
+}
+
+.container {
+    background-color: var(--col2);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header {
+    background-color: var(--col3);
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: var(--col4);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+form {
+    margin: 20px;
+}
+
+.weatherCard {
+    width: 300px;
+    height: 300px;
+    color: var(--col4);
+    background-color: var(--col3);
+    margin: 20px;
+}
